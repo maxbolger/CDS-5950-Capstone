@@ -22,6 +22,9 @@ def main(file_type='csv'):
   """
   This file preprocesses the shot data and creates the final model. 
   A logfile of scores is saved along with the data with predictions.
+  
+        Parameters:
+              file_type (str): file type for prediction data to be saved as
   """
   logger = log(path=os.getcwd(), file="model.log")
 
