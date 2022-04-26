@@ -7,7 +7,9 @@ def preprocess(data):
   
   Parameters:
         data (pandas.DataFrame): a df of the orignal shot data to preprocess  
-        returns: preprocessed data
+        
+  Returns:
+        df (pandas.DataFrame): preprocessed data
   """
 
   df = data.loc[~(data.action_type=='No Shot')].copy()
