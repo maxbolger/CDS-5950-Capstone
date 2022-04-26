@@ -10,6 +10,9 @@ def main(file_type='csv'):
     Scrapes player position, height, and weight for players that did not have
     this information listed on the WNBA players page and updates the existing
     player data
+    
+          Parameters:
+                file_type (str): file type for data to be saved as
   '''
   players = pd.read_parquet('wnba_player_data.parquet')
   df = pd.read_parquet('wnba_shot_data.parquet')
