@@ -4,6 +4,9 @@ import numpy as np
 def main(file_type='csv'):
   """
   Prepares model output data for streamlit app
+  
+        Parameters:
+              file_type (str): file type for data to be saved as
   """
 
   df = pd.read_parquet('wnba_shot_model_preds.parquet')
